@@ -18,6 +18,7 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <title>Tourist</title>
+    <link rel="icon" href="">
 </head>
 
 <body>
@@ -66,7 +67,7 @@
 
 
         <div class="overlay">
-            <img src="img/bg-hero.jpg" alt="Hero background image">
+            <img id="slider" src="img/bg-hero1.jpg" alt="Hero background image">
             <div class="under-nav desktop-nav">
                 <div class="container">
                     <nav class="nav-bar">
@@ -418,10 +419,21 @@
     </footer>
 
     <button class="go-top" id="go-top" type="button">
-       <i class="fa-solid fa-arrow-up-long"></i>
+        <i class="fa-solid fa-arrow-up-long"></i>
     </button>
 
     <script>
+        // slider
+        let i = 1;
+        function changeImg() {
+            if (i++ >= 4) {
+                i = 1;
+            }
+            document.querySelector("#slider").src = `img/bg-hero${i}.jpg`;
+        }
+        setInterval(changeImg, 3000);
+
+        // ẩn hiện menu ở mobile
         let button_menu = document.getElementById("mobile-button");
         let menu = document.querySelector(".mobile-menu");
 
@@ -429,15 +441,17 @@
             menu.classList.toggle("active");
         }, false);
 
+
+        // nút lên đỉnh
         let button_top = document.getElementById("go-top");
-        button_top.addEventListener("click",function(){
+        button_top.addEventListener("click", function () {
             window.scrollTo(
                 {
-                    top:0,
+                    top: 0,
                     behavior: "smooth"
                 }
             );
-        },false);
+        }, false);
 
     </script>
 
