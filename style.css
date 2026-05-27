@@ -25,6 +25,10 @@ p {
     font-family: 'Heebo', sans-serif;
 }
 
+input:focus{
+    outline: none;
+}
+
 h2,
 h3,
 h4,
@@ -178,7 +182,7 @@ header .container {
     z-index: -1;
 }
 
-.overlay>img {
+.overlay > img {
     position: absolute;
     z-index: -2;
     object-fit: cover;
@@ -290,6 +294,12 @@ header .container {
     width: 90%;
 }
 
+.search-box input{
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
 .search-box button {
     border: none;
     background-color: rgba(134, 184, 23);
@@ -359,7 +369,7 @@ footer .container {
 .about-image img {
     height: 100%;
     width: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .about-text {
