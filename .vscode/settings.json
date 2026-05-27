@@ -1,4 +1,5 @@
 {
     "editor.guides.bracketPairs": true,
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "off",
+    "liveServer.settings.port": 5501
 }

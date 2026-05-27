@@ -5,7 +5,7 @@
 
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 div {
@@ -352,15 +352,14 @@ footer .container {
     margin-bottom: 22px;
 } */
 
-
 .about-image {
-    height: 460px;
+    height: 455px;
 }
 
 .about-image img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .about-text {
@@ -425,17 +424,19 @@ footer .container {
 /* destination */
 
 
-.fixed-image {
+.right-image {
     width: 100%;
-    object-fit: cover;
-    height: 530px;
+    /* object-fit: cover; */
+    height: 480px;
 }
+
 
 .destination-item {
     position: relative;
+
 }
 
-.first-img{
+.first-img {
     margin-bottom: 15px;
 }
 
@@ -668,13 +669,13 @@ footer a {
     display: none;
 }
 
-.go-top{
+.go-top {
     position: fixed;
     right: 40px;
     bottom: 40px;
     background-color: rgba(134, 184, 23);
-    font-size: 18px;
-    padding: 12px 18px;
+    font-size: 16px;
+    padding: 10px 16px;
     z-index: 10;
     border: none;
     color: white;
@@ -712,7 +713,7 @@ footer a {
         border-bottom: 1px solid #eee;
     }
 
-    .mobile-nav ul{
+    .mobile-nav ul {
         padding-bottom: 0;
     }
 
@@ -747,11 +748,11 @@ footer a {
         border-radius: 2px;
     }
 
-    .mobile-menu{
+    .mobile-menu {
         display: none;
     }
 
-    .mobile-menu.active{
+    .mobile-menu.active {
         display: block;
     }
 
@@ -775,21 +776,17 @@ footer a {
         color: rgba(134, 184, 23);
     }
 
-    .hero-content{
+    .hero-content {
         padding: 200px 21px;
     }
 
-    .hero-header{
-        font-size:50px;
+    .hero-header {
+        font-size: 50px;
     }
 
 
     .about-image {
         margin-bottom: 50px;
-    }
-
-    .fixed-image{
-        height: 360px;
     }
 
     .more-information {
